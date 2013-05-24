@@ -1,0 +1,31 @@
+.calendar{
+	position: relative;
+	width: 2em;
+	height: 1.5em;
+	margin: 30% auto;
+	box-shadow:0 0 0 .2em #2c2c2c,0 -.3em 0 .2em #2c2c2c;
+}
+
+.calendar:after{
+	content:"";
+	position: absolute;
+	left:.23em;
+	top:.3em;
+	width: .35em;
+	height: .35em;
+	background:#2c2c2c;
+	box-shadow:.6em 0 0 #2c2c2c,1.2em 0 0 #2c2c2c,
+	0 .5em 0 #2c2c2c,.6em .5em 0 #2c2c2c,1.2em .5em 0 #2c2c2c;
+}
+.calendar:before{
+	content:"";
+	position: absolute;
+	left:.15em;
+	top:-.8em;
+	width: .2em;
+	height: .5em;
+	border-radius:.2em;
+	background:#2c2c2c;
+	box-shadow:0 0 0 .1em white,1.55em 0 0 .02em #2c2c2c
+	,1.55em 0 0 .1em white;
+}
