@@ -7,16 +7,16 @@ body {
     margin: 0 auto;
     width: 940px;
     font: 13px/22px Helvetica, Arial, sans-serif;
-    background: #f0f0f0;
+    background: url(ticks.png) repeat;
 }
 
-h2 {
+h1 {
     font-size: 28px;
     line-height: 44px;
     padding: 22px 0;
 }
 
-h3 {
+h2 {
     font-size: 18px;
     line-height: 22px;
     padding: 11px 0;
@@ -24,6 +24,21 @@ h3 {
 
 p {
     padding-bottom: 22px;
+}
+
+#content {
+    display: table;
+}
+
+#mainContent {
+    display: table-cell;
+    width: 620px;
+    padding-right: 22px;
+}
+
+aside {
+    display: table-cell;
+    width: 300px;
 }
 
 /* START NAV MENU */
@@ -93,3 +108,64 @@ nav {
 
 /* END NAV MENU */
 
+footer {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+}
+
+article {
+    padding: 21px;
+    background: #d7d7d7;
+}
+
+    article:nth-child(2n+1) {
+        background-color: #f0f0f0;
+    }
+
+    article header {
+        border-bottom: 2px solid #808080;
+    }
+
+    article footer {
+        border-top: 2px dashed #808080;
+    }
+
+aside {
+    margin: 50px;
+    color: #f0f0f0;
+    font-family: Georgia, serif;
+}
+
+#aside-content {
+    padding: 10px 0 50px 10px;
+    background: url(grey_wash_wall.png) repeat;
+}
+
+    #aside-content h1 {
+        text-align: center;
+        border-bottom: 1px solid #808080;
+    }
+
+    #aside-content ul {
+        list-style: none;
+        font-size: medium;
+        line-height: 2em;
+    }
+
+        #aside-content ul a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+            #aside-content ul a:hover {
+                color: #ffffff;
+                font-weight: bold;
+            }
